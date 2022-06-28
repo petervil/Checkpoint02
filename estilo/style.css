@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  color: #000;
+}
+
+header {
+  display: flex;
+  background-color: #090809;
+  justify-content: space-between;
+}
+
+.menu__hamburguer {
+  display: flex;
+  margin: 20px;
+}
+
+ul {
+  list-style-type: none;
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+}
+
+.wallpaper {
+  background-image: url(../img/wallpaper.jpg);
+  background-repeat: no-repeat;
+  display: flex;
+  height: 1000px;
+  width: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  margin-top: 5px;
+}
