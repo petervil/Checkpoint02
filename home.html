@@ -1,71 +1,169 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./estilo/style.css">
-  <title>Home</title>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./img/dungeons-and-dragons.png" type="image/x-icon">
+  <title>DH Flix | Dungeons and Dragons.</title>
+  <link rel="stylesheet" href="./estilo/style.css" />
 </head>
-<header>
-  <div class="logo"><img src="./img/DD-Logo-menor.png" alt=""></div>
-  <nav class="menu">
-    <div class="menu__hamburguer"><img src="./img/menu.png" alt=""></div>
-    <ul>
-      <li>Home</li>
-      <li>Itens</li>
-      <li>Sobre Nós</li>
-      <li>Login</li>
-    </ul>
-  </nav>
-</header>
+
 <body>
-  <main>
-    <div class="wall__text">
-      <div class="wallpaper"><img src="" alt="">
-        <div class="title">
-          <h1>Dungeon and Dragons</h1>
+
+  <header>
+    <div class="logoEffect">
+      <img class="logoControl" id="homeMenu" src="img/DD-logo-Transparent.png">
+    </div>
+
+    <nav class="headerMenu">
+      <ol>
+        <li><a href="#homeMenu">Home</a></li>
+        <li><a href="#DnDAdv">Itens</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="#mygroup">GrupoDev</a></li>
+      </ol>
+    </nav>
+  </header>
+
+  <div class="dndCapa"></div>
+
+  <section class="DnDAdv" id="DnDAdv">
+    <h3>As 5 Melhores Campanhas Oficiais de D&D 5ª Edição:</h3>
+
+    <div class="CampanhasContainer">
+
+      <div class="cardsDnd ">
+        <div class="containerStradh backCard"></div>
+        <div class="containerText">
+          <h4>A Maldição de Strahd (Curse of Strahd)</h4>
+          <p>
+            Uma adaptação e expansão do módulo de aventura Ravenloft da 1ª edição Dungeons & Dragons (onde você invade um castelo amaldiçoado supervisionado por uma figura semelhante a Drácula), em Curse of Strahd vê você preso em Barovia: uma terra miserável de névoas cinzentas e céu sem sol que é supervisionado pelo senhor dos dentes pontudos e mal-humorados do título da campanha.
+
+            Todo-poderoso, gótico, totalmente maluco, essa aventura faz você se unir para derrubar o déspota sanguinário. Esta não é sua típica aventura de alta fantasia. Em Curse of Strahd o vilão já venceu, a economia não existe e você tem poucas chances de vencê-lo!
+
+            Além de ser perseguido pelo próprio Strahd, você também descobrirá que todo o resto também quer matá-lo.
+
+            Os lobos, as bruxas, as hordas de morcegos – esta campanha tem todas as armadilhas assustadoras de horror folclórico que você precisa. Há até uma seção onde você encontra a cabana de uma bruxa correndo com pernas!
+          </p>
         </div>
-        <div class="description">
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Modi, temporibus nihil. Adipisci saepe praesentium quia voluptas. Quasi itaque accusantium nobis, fugit sit numquam ullam nostrum molestiae harum quis, id incidunt?</p>
+        <div class="buttonCard">
+          <button><a href="#enterCampanha.html"> LER MAIS</a></button>
+        </div>
+      </div>
+
+      <div class="cardsDnd">
+        <div class="containerAbyss backCard"></div>
+        <div class="containerText">
+          <div class="containerText">
+            <h4>Fora do Abismo (Out of the Abyss)</h4>
+            <p>
+              Como uma Alice no País das Maravilhas, esta campanha leva você a uma aventura psicodélica no final do submundo – uma série de túneis que literalmente atravessam continentes. Aqui, está eternamente escuro (você navegará principalmente usando fungos brilhantes), e cultos horríveis baseados na deusa-aranha Lolth abundam.
+
+              Dito isto, é um lugar próspero, cheio de cidades, redes comerciais e infraestrutura. Só não espere se envolver em monólogos espirituosos com lagartas amigáveis.
+
+              Você começa como prisioneiro, antes de fazer uma viagem de terror ao estilo do Apocalipse Now, enquanto mergulha cada vez mais fundo nas cavernas. Essa campanha ainda tem o próprio Demogorgon!
+            </p>
+          </div>
+        </div>
+        <div class="buttonCard">
+          <button><a href="enterCapanha.html"> LER MAIS</a></button>
+        </div>
+      </div>
+
+      <div class="cardsDnd">
+        <div class="containerBaldur backCard"></div>
+        <div class="containerText">
+          <h4>Portão de Baldur: Descida em Avernus (Baldur’s Gate: Descent into Avernus)</h4>
+          <p>
+            Talvez a campanha de Dungeons & Dragons mais pesada de todos os tempos, o recém-lançado Baldur’s Gate: Descent into Avernus literalmente leva você ao Nove Infernos e volta!
+
+            Situado durante as infames Guerras de Sangue, apresenta inimigos diabólicos, céus ardentes e outras bestas demoníacas.
+
+            Uma campanha invulgarmente longa, acompanha jogadores de 1 a 13 nível e é um livro volumoso. Definitivamente, um dos fãs de Baldur’s Gate – a campanha serve como uma prévia do jogo de videogame Baldur’s Gate III – ou que gosta de explorar uma paisagem infernal saturada por cenas de ultra violência.
+          </p>
+        </div>
+        <div class="buttonCard">
+          <button><a href="enterCapanha.html"> LER MAIS</a></button>
+        </div>
+      </div>
+
+      <div class="cardsDnd">
+        <div class="containerTrovao backCard"></div>
+        <div class="containerText">
+          <h4>O Trovão do Rei Tempestade (Thunder King’s Storm)</h4>
+          <p>
+            A alta fantasia sempre foi um item básico em Dungeons & Dragons, e se esse é feliz com isso, esta campanha nas regiões mais geladas dos Forgotten Realms é ideal para você.
+
+            Nela, gigantes poderosos estão aterrorizando a civilização. Em resposta, o povo pequeno está se reunindo em busca da magia rúnica – a arma antiga que permitiu aos gigantes derrotar os dragões há muito tempo.
+
+            Nesta campanha tem de tudo, desde kraken magos a bosques de fantasia encantados, e os próprios gigantes – dos quais existem vários tipos – são inimigos formidáveis.
+
+            Além disso, é um livro de campanha volumoso, mas imensamente detalhado, que fornece uma verdadeira cornucópia de resultados – cujos jogadores são apresentados com várias maneiras de concluir uma missão.
+          </p>
+        </div>
+        <div class="buttonCard">
+          <button><a href="enterCapanha.html"> LER MAIS</a></button>
+        </div>
+      </div>
+
+      <div class="cardsDnd">
+        <div class="containerWaterdeep backCard"></div>
+        <div class="containerText">
+          <h4>Águas Profundas: Dragonheist (Waterdeep: Dragonheist)</h4>
+          <p>
+            As ruas decadentes de Waterdeep não ficam muito longe das ruas imundas da série Discworld, de Terry Pratchett, Ankh Morpork.
+
+            Uma excelente campanha longa para iniciantes, embora muito curta em comparação com as outras, levará você dos níveis 1 a 5. Além disso, o livro físico apresenta um lindo mapa colorido de Waterdeep.
+
+            Em termos de história, o vilão que você jogará depende de qual das quatro temporadas os jogadores escolhem. Exemplos de possíveis bandidos incluem uma horda de espectadores e alguns adoradores de demônios ultra-estranhos. Em termos de história, é efetivamente uma loucura conseguir o ouro que falta antes que todo mundo.
+
+            Nem alta fantasia nem horror, é mais no estilo rede de investigação urbana. Tira muita inspiração dos filmes de assalto e no estilo Cloak & Dagger. Como era de se esperar, a corrupção está no coração de Waterdeep, e há uma infinidade de facções e vilões para os jogadores encontrarem.
+
+            O tom é bastante leve e oferece muitas oportunidades divertidas de interpretação. De todas as campanhas, é mais adequado investigar do que matar sem pensar, embora exista muito assassinato.
+
+            Também diferente de todas as outras campanhas, os riscos não são tão altos. Nisso, você não está salvando o mundo. Bem, não diretamente.
+
+            É perfeito para jogadores iniciantes ou uma diversão divertida para jogadores que saem de uma campanha mais pesada procurando algo um pouco mais leve.
+          </p>
+        </div>
+        <div class="buttonCard">
+          <button><a href="enterCapanha.html"> LER MAIS</a></button>
         </div>
       </div>
     </div>
-    <div class="cards">
-      <h2>Itens</h2>
-      <div class="card1">
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Blanditiis laboriosam adipisci vitae voluptate id nihil neque eveniet ex veritatis similique. Harum et numquam nemo, quae facilis dicta omnis quaerat assumenda!</p>
-        <button>IR</button>
+  </section>
+  <!--Fim Cards-->
+
+  <!--Inicio rodapé-->
+  <footer id="mygroup">
+
+    <div class="footerClass">
+
+      <div class="gitLinkNayara">
+        <p class="nameAll">Nayara Rodrigues da Cruz</p>
+        <p class="office">Responsável pelo desenvolvimento</p>
+        <div class="links">
+          <a href="https://github.com/SrtaHawke" target="_blank"><img src="img/gitLogo.png" /></a>
+          <a href="https://www.linkedin.com/in/nayara-rodrigues-da-cruz-747774190/" target="_blank"><img src="img/linkedinLogo.png" /></a>
+        </div>
       </div>
-      <div class="card3">
-        <img src="" alt="">
-        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ut asperiores mollitia modi magnam unde quasi similique, accusantium deleniti veniam sunt autem nulla officia ipsum et. Distinctio inventore hic debitis architecto.</p>
-        <button>IR</button>
-      </div>
-      <div class="card4">
-        <img src="" alt="">
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, asperiores minus. Deserunt, sequi fugiat. Illo impedit esse incidunt aspernatur, architecto ab maiores hic asperiores ullam. Impedit tempora adipisci dolore odio.</p>
-        <button>IR</button>
+
+      <div class="gitLinkPedro">
+        <p class="nameAll">Pedro Vilela</p>
+        <p class="office">Responsável pelo desenvolvimento</p>
+        <div class="links">
+          <a href="https://github.com/petervil" target="_blank"><img src="img/gitLogo.png" /></a>
+          <a href="https://www.linkedin.com/in/pedro-vilela-9962a04a/" target="_blank"><img src="img/linkedinLogo.png" /></a>
+        </div>
       </div>
     </div>
-  </main>
+
+    <div class="classFinal">
+      <p>CHECKPOINT II DESENVOLVIDO JUNHO - 2022</p>
+    </div>
+  </footer>
 </body>
-<footer>
-  <div class="info">
-    <div class="aluno1">
-    <h4>Primeiro Aluno</h4>
-    <p>Responsável pelo desenvolvimento de...</p>
-    <a href=""><img src="" alt="linkedin"></a>
-    <a href=""><img src="" alt="github"></a>
-    </div>
-    <div class="aluno2">
-      <h4>Segundo Aluno</h4>
-      <p>Responsável pelo desenvolvimento de...</p>
-      <a href=""><img src="" alt="linkedin"></a>
-      <a href=""><img src="" alt="github"></a>
-    </div>  
-  </div>
-  <p>Checkpoint 2 desenvolvido em 2021</p>
-</footer>
+
 </html>

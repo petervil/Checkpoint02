@@ -1,40 +1,531 @@
 * {
-  margin: 0;
-  border: 0;
-  padding: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
-  color: #000;
+  padding: 0;
+  margin: 0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #000000;
+  position: center;
+  
+}
 header {
   display: flex;
-  background-color: #090809;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px solid gray;
+  background-position: bottom;
+}
+
+.logoControl {
+  margin-left: 30px;
+  align-items: center;
+  width: 500px;
+  height: 90px;
+  display: flex;
+  position: relative;
+  margin-bottom: 8px;
+  margin-top: 8px;
+  right: 50px;
+}
+
+.logoControl:hover {
+  transform: scale(1.15);
+  transition: 1.2s;
+}
+
+.enterStrahd {
+  height: 144px;
+  opacity: 70%;
+}
+
+ol {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  margin-right: 16px;
+  color: white;
+}
+
+.headerMenu ol {
+  list-style-type: none;
+  display: inline-flex;
+  position: relative;
+  right: 120px;
+
+}
+
+.headerMenu li {
+  border: solid 2px transparent;
+  border-radius: 24px;
+  padding: 15px;
+  align-items: center;
+  justify-items: center;
+  transition: all 1.2s;
+  z-index: 100;
+}
+
+.headerMenu a {
+  font-size: 24px;
+  color: #ffffff;
+  text-decoration: none;
+  padding: 32px;
+
+}
+
+.headerMenu li:hover {
+  transform: scale(1.25);
+  border: solid 4px rgb(255, 255, 255);
+  background-image: url(../img/kisspng-dungeons-dragons-d2-dice-roller-role-playing-vortek-spaces-free-windows-phone-app-market-5c7b2ca4c21935.858965651551576228795.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 15px;
+}
+
+.headerMenu a:hover {
+  font-size: 32px;
+  font-family: Roboto;
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+.enterStrahd:hover {
+  height: 144px;
+  opacity: 100%;
+  transform: scale(1.10);
+  transition: 1s;
+}
+
+.dndCapa {
+  height: 534px;
+
+  background-image: url(../img/beholdercego.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  box-shadow: inset 0 0 10em black;
+}
+
+h3 {
+  color:white;
+  text-align: center;
+  padding-bottom: 32px;
+  padding-top: 32px;
+}
+
+.DnDAdv {
+  display: flex;
+  flex-direction: column;
+  font-size: 35px;
+  
+}
+
+.CampanhasContainer {
+  box-shadow: none;
+  gap: 70px;
+  padding-top: 50px;
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 50px;
+  z-index: initial;
+}
+
+.cardsDnd {
+  opacity: 100%;
+  Width: 308px;
+  Height: 412px;
+  border-radius: 32px;
+  background-color: rgb(171, 53, 53);
+  box-shadow: rgb(255, 240, 240) 0px 20px 30px -10px;
+  border-bottom: 1px solid;
+  border-right: 1px solid;
+  overflow-y: scroll;
+  scroll-behavior: initial;
+  overflow-x: hidden;
+  cursor: pointer;
+
+}
+
+.containerText h4 {
+  font-size: 30px;
+  text-align:center;
+}
+
+.containerText p {
+  padding: 16px;
+  line-height: 24px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.buttonCard {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: scale(1.05);
+  transition: 2s;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+button {
+  border-radius: 5%;
+  background-color: rgb(0, 0, 0);
+  Width: 136px;
+  Height: 34px;
+}
+
+
+button a {
+  text-decoration: none;
+  font-size: 16px;
+  padding: 12px 28px 12px 28px;
+  color: #f8f8f8;
+  font-family: Roboto;
+
+}
+
+button:hover {
+  transition: 2s;
+  text-decoration: none;
+  background-color: #8d0f0f;
+  color: #8d0f0f;
+
+}
+button a:hover {
+  transition: 2s;
+  color: black;
+}
+
+.backCard{
+  Width: 308px;
+  Height: 230px;
+  background-position: center;
+  background-size: 308px;
+  background-repeat: no-repeat;
+  border-radius: 32px;
+}
+
+.containerStradh {
+  background-image: url(../img/strahd.jpg);
+}
+
+.containerAbyss {
+  background-image: url(../img/out-of-the-abyss.jpg);
+}
+
+.containerBaldur {
+  background-image: url(../img/baldur.jpg);
+}
+
+.containerTrovao {
+  background-image: url(../img/thunder.jpg);
+}
+
+.containerWaterdeep {
+  background-image: url(../img/Waterdeep.jpg);
+}
+
+#mygroup{
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(101, 100, 100);
+  position: relative;
+  height: 375px;
+}
+
+.footerClass {
+  display: flex;
+  flex-direction: row;
+  padding: 80px;
+  align-items: center;
   justify-content: space-between;
 }
 
-.menu__hamburguer {
+.office{
+  font-size: 16px;
+}
+
+footer img {
+  gap: 20px;
+  border-radius: 4px;
+  width: 60px;
+}
+
+.nameAll {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.links {
+  margin-top: 16px;
   display: flex;
-  margin: 20px;
+  align-items: center;
+  justify-content: space-between;
 }
 
-ul {
-  list-style-type: none;
-  display: none;
+.classFinal {
+  font-size: 16px;
+  font-weight: bold;
+  display: grid;
+  position: relative;
+  top: -70px;
 }
 
-main {
+.classFinal p {
+  padding: 50px;
+  text-align: center;
+}
+
+
+
+/*Pagina Detail Film,*/
+.enterCampanha {
+  background-image: url(../img/strahdenter.jpg);
+  background-color: #000000;
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.titleCampanha{
+  color:white;
+  padding-left: 36px;
+  padding-top: 36px;
+  text-align: center;
+  font-size: 40px;
+}
+.textoCampanha{
+  color:white;
+  padding: 40px 200px;
+  line-height: 27px;
+  font-size: 20px;
+  text-align: revert ;
+}
+
+.dicaClass{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  gap: 20px;
+
+}
+
+.dicaCampanha {
   display: flex;
   flex-direction: column;
+  text-align: center;
+  color: white;
+}
+.dicaCampanha h3 {
+  padding: 20px;
+  font-size: 1.6rem;
 }
 
-.wallpaper {
-  background-image: url(../img/wallpaper.jpg);
-  background-repeat: no-repeat;
+.dicaCampanha p {
+  font-size: .8rem;
+}
+
+.styleBook{
+  color: #be1919;
+}
+
+.trailerClass{
+  justify-content: center;
+  margin: 50px;
   display: flex;
-  height: 1000px;
+}
+
+.mainLogin{
+
+  height: 100vh;
+  width: 100vw;
+  row-gap: 30px;
+  flex-direction: column;
+  display: flex;
+}
+
+.backgroundImage {
+  background-image: url(../img/117905.jpg);
+}
+
+.loginLogo {
+  justify-content: center;
+  display: flex;
+  padding-top: 10px;
+}
+
+.imageForm {
   width: 100%;
+  column-gap: 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
   align-items: center;
-  justify-content: flex-end;
-  margin-top: 5px;
+}
+
+.formLogin {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 13px;
+  color: #ffffff;
+
+
+}
+
+.labelLogin {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bolder;
+  border: white;
+}
+
+.labelLogin input {
+  height: 35px;
+  padding-left: 5px;
+  border-radius: 10px;
+  color: #ffffff;
+}
+
+.buttonLogin {
+  Width: 136px;
+  Height: 34px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.5ms;
+  text-decoration: none;
+  color:white;
+  border-radius: 5%;
+  background-color: #b70707;
+  transform: scale(1.05);
+}
+
+.buttonLogin a {
+  padding: 12px 28px 12px 28px;
+  font-size: 16px;
+  text-decoration: none;
+  color: #000000;
+
+}
+
+.buttonLogin:hover {
+  color: #000000;
+  text-decoration: none;
+  transition: 2s;
+  background: red;
+  background: linear-gradient(0deg, red 22%, red 42%);
+
+
+}
+button a:hover {
+  color: #ffffff;
+  transition: 0.5ms;
+}
+
+@media (max-width: 425px) {
+
+  nav {
+      display: none;
+
+  }
+  h3 {
+      font-size: .7rem;
+  }
+
+  .logoControl {
+      width: 13px;
+  }
+
+  .cardfilm{
+      height: 400px;
+      width: 308px;
+  }
+  footer {
+      font-size: 0.5rem;
+
+
+  }
+
+  footer img {
+      width: 50px;
+
+  }
+
+  .footerClass {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .links {
+      justify-content: center;
+      gap: 50px;
+  }
+  .classFinal {
+      font-size: .7rem;
+      padding-bottom: 20px;
+  }
+
+  .enterCampanha{
+      height: 290px;
+      box-shadow: inset 6em 0 10em black;
+  }
+
+  .textoCampanha{
+
+      padding: 40px;
+      line-height: 27px;
+      font-size: 16px;
+  }
+
+  .trailerClass{
+      height: 300px;
+      margin: 10px 0;
+      display: flex;
+      justify-content: center;
+
+  }
+}
+
+@media (max-width: 768px) {
+
+  nav {
+      display: none;
+
+  }
+
+  .enterStrahd{
+      opacity: 100;
+  }
+
+  .footerClass {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      gap: 20px;
+  }
+  .enterCampanha{
+      box-shadow: inset 4em 5em 10em black;
+  }
+
 }

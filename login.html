@@ -1,34 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./estilo/style.css">
-  <title>Login</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="My icon" href="img/dungeons-and-dragons.png">
+    <title>DH Flix | Dungeons and Dragons.</title>
+    <link rel="stylesheet" href="./estilo/style.css" />
 </head>
-<header>
-  <div class="logo"></div>
-  <div class="menu">
-    <ul>
-      <li>Home</li>
-      <li>Itens</li>
-      <li>Sobre Nós</li>
-      <li>Login</li>
-    </ul>
-  </div>
-</header>
-<body>
-  <main>
-    <div class="wallpaper"></div>
-  </main>
-  <form action="/login" method="post">
-    <label for="login">Login:</label>
-    <input type="text" name="login" id="login" placeholder="Informe seu login">
-    <label for="senha">Senha:</label>
-    <input type="password" name="senha" id="senha" placeholder="Digite sua senha">
-    <button type="submit">Enviar</button>
 
-  </form>  
+<body>
+
+<main class="mainLogin backgroundImage">
+
+    <div class="loginLogo">
+        <img  src="img/dungeons-and-dragons-723167.png" alt="">
+    </div>
+
+    <div class="imageForm">
+
+        <form class="formLogin" action="" method="get">
+            <div class="labelLogin">
+
+                <label for="#useMail">Insira seu e-mail:</label>
+                <input type="email" id="useMail" placeholder="beholdercego@dnd.com">
+
+            </div>
+
+            <div class="labelLogin">
+
+                <label for="#userPass">Senha:</label>
+                <input type="password" id="userPass" placeholder="Ex:123456">
+
+            </div>
+
+            <button class="buttonLogin"><a href="index.html"> Log-in</a></button>
+
+        </form>
+
+    </div>
+
+</main>
+<footer>
+
+</footer>
 </body>
 </html>
